@@ -1,0 +1,23 @@
+@baseUrl=http://localhost:4002
+
+###
+POST {{baseUrl}}/order
+Accept: application/json
+Content-Type: application/json
+
+{
+    "quantity": 5,
+    "customerName": "Rocky Triady",
+    "productId": "a"
+}
+
+###
+GET {{baseUrl}}/order
+Accept: application/json
+Content-Type: application/json
+
+
+###
+GET {{baseUrl}}/order/1
+Accept: application/json
+Content-Type: application/json
